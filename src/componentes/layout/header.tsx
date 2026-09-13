@@ -9,7 +9,7 @@ function Header() {
           to="/"
           className="text-2xl font-bold text-gray-900"
         >
-          Soulbuddy
+          SOL
         </Link>
 
         <nav className="flex items-center gap-8">
