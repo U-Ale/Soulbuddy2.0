@@ -103,14 +103,14 @@ function Integrantes() {
             </div>
           </div>
           
- {/* Felipe precisa botar o link do git e do link o link do yt é provisorio */}
+          {/* Felipe Passos */}
           <div className="rounded-xl bg-white p-6 text-center shadow-sm">
             <h3 className="text-xl font-bold">Felipe</h3>
             <p className="mt-2 text-gray-600">Front-End Developer</p>
 
             <div className="mt-5 flex justify-center gap-4">
                <a
-                href="https://www.youtube.com/watch?v=yYWebbD6JXg&list=RDyYWebbD6JXg&start_radio=1&t=97s"
+                href="https://www.linkedin.com/in/felipe-passos-110668397/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline"

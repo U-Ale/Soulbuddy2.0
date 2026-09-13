@@ -4,6 +4,9 @@ function Dashboard() {
 
     const [ecoPoints, setEcoPoints] = useState(1250);
     const [aguaConcluida, setAguaConcluida] = useState(false)
+    const [lixoConcluida, setLixoConcluida] = useState(false);
+    const [arvoreConcluida, setArvoreConcluida] = useState(false);
+
 
   return (
     <div className="min-h-screen bg-gray-100">
@@ -55,9 +58,35 @@ function Dashboard() {
                ? "✅ Economizar água = 10 EP"
                : "⬜ Economizar água = 10 EP"}
             </button>
+            </li> 
+
+            <li><button
+              onClick={() => {
+              if (!lixoConcluida) {
+              setEcoPoints(ecoPoints + 5);
+              setLixoConcluida(true);
+              }
+              }}
+  >
+              {lixoConcluida
+             ? "✅ Separar lixo = 5 EP"
+             : "⬜ Separar lixo = 5 EP"}
+             </button></li>
+            <li>
+
+            <button
+               onClick={() => {
+               if (!arvoreConcluida) {
+               setEcoPoints(ecoPoints + 50);
+               setArvoreConcluida(true);
+               }
+               }}
+  >
+               {arvoreConcluida
+               ? "✅ Plantar árvore = 50 EP"
+               : "⬜ Plantar árvore = 50 EP"}
+              </button>
             </li>
-            <li>✅ Separar lixo = 5 EP</li>
-            <li>⬜ Plantar árvore = 50 EP</li>
           </ul>
         </div>
 
@@ -68,7 +97,7 @@ function Dashboard() {
           </h2>
 
           <div className="space-y-3">
-            <p>1º Ana — 3200 pts</p>
+            <p>1º Ana — {ecoPoints} pts</p>
             <p>2º Lucas — 2800 pts</p>
             <p>3º Maria — 2500 pts</p>
           </div>
