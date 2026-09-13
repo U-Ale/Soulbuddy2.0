@@ -40,6 +40,13 @@ function Header() {
           >
             Integrantes
           </Link>
+          
+           <Link
+            to="/Contato"
+            className="text-sm font-medium text-gray-700 transition hover:text-gray-900"
+          >
+            Contato
+          </Link>
         </nav>
 
       </div>
