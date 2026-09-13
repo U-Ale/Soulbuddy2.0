@@ -9,7 +9,7 @@ function Header() {
           to="/"
           className="text-2xl font-bold text-gray-900"
         >
-          EcoFuture
+          Soulbuddy
         </Link>
 
         <nav className="flex items-center gap-8">
@@ -32,6 +32,13 @@ function Header() {
             className="text-sm font-medium text-gray-700 transition hover:text-gray-900"
           >
             Dashboard
+          </Link>
+
+          <Link
+            to="/Integrantes"
+            className="text-sm font-medium text-gray-700 transition hover:text-gray-900"
+          >
+            Integrantes
           </Link>
         </nav>
 

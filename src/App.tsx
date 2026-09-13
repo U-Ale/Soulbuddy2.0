@@ -4,6 +4,7 @@ import Footer from "./componentes/layout/footer.tsx";
 import Home from "./paginas/home/home.tsx";
 import Sobre from "./paginas/sobre/sobre.tsx"
 import Dashboard from "./paginas/dashboard/dashboard.tsx";
+import Integrantes from "./paginas/integrantes/integrantes.tsx";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/sobre" element={<Sobre />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path= "/integrantes" element={<Integrantes />} />
           </Routes>
         </main>
 
