@@ -1,9 +1,10 @@
 function Home() {
   return (
-    <div>
-      <h1>Home</h1>
-      <p>Bem-vindo ao SoulBuddy!</p>
-    </div>
+    <section className="flex min-h-[70vh] items-center justify-center">
+      <h1 className="text-4xl font-bold">
+        Home
+      </h1>
+    </section>
   );
 }
 

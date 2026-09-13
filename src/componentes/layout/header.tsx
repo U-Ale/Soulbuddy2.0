@@ -1,13 +1,41 @@
+import { Link } from "react-router-dom";
+
 function Header() {
   return (
-    <header>
-      <h1>SoulBuddy</h1>
+    <header className="border-b border-gray-200 bg-white">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
 
-      <nav>
-        <a href="/">Home</a>
-        <a href="/">Sobre</a>
-        <a href="/">Contato</a>
-      </nav>
+        <Link
+          to="/"
+          className="text-2xl font-bold text-gray-900"
+        >
+          EcoFuture
+        </Link>
+
+        <nav className="flex items-center gap-8">
+          <Link
+            to="/"
+            className="text-sm font-medium text-gray-700 transition hover:text-gray-900"
+          >
+            Início
+          </Link>
+
+          <Link
+            to="/sobre"
+            className="text-sm font-medium text-gray-700 transition hover:text-gray-900"
+          >
+            Sobre
+          </Link>
+          
+          <Link
+            to="/Dashboard"
+            className="text-sm font-medium text-gray-700 transition hover:text-gray-900"
+          >
+            Dashboard
+          </Link>
+        </nav>
+
+      </div>
     </header>
   );
 }
