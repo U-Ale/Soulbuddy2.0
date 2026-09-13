@@ -1,4 +1,10 @@
+import { useState } from "react";
+
 function Dashboard() {
+
+    const [ecoPoints, setEcoPoints] = useState(1250);
+    const [aguaConcluida, setAguaConcluida] = useState(false)
+
   return (
     <div className="min-h-screen bg-gray-100">
       
@@ -25,7 +31,7 @@ function Dashboard() {
             </h2>
 
             <p className="mt-2 text-gray-600">
-              EcoPoints: 1250
+              EcoPoints: {ecoPoints}
             </p>
           </div>
         </div>
@@ -37,7 +43,19 @@ function Dashboard() {
           </h2>
 
           <ul className="space-y-3">
-            <li>✅ Economizar água = 10 EP</li>
+           <li>
+            <button
+               onClick={() => {
+               if (!aguaConcluida) {
+               setEcoPoints(ecoPoints + 10);
+               setAguaConcluida(true);
+               }
+               }}
+>              {aguaConcluida
+               ? "✅ Economizar água = 10 EP"
+               : "⬜ Economizar água = 10 EP"}
+            </button>
+            </li>
             <li>✅ Separar lixo = 5 EP</li>
             <li>⬜ Plantar árvore = 50 EP</li>
           </ul>
