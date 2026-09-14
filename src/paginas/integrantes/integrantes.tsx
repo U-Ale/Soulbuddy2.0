@@ -9,7 +9,7 @@ function Integrantes() {
   return (
     <section className="min-h-screen bg-gradient-to-b from-sky-300 to-sky-400 px-6 py-12">
       <div className="mx-auto max-w-7xl">
-        <h2 className="mb-8 text-center text-3xl font-bold">
+        <h2 className="mb-8 text-center text-5xl text-white font-bold">
           Desenvolvido por
         </h2>
 

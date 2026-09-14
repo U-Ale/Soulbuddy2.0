@@ -1,16 +1,18 @@
 import { Link } from "react-router-dom";
+import logo from "../../assets/Icones/logo.png" 
 
 function Header() {
   return (
     <header className="border-b border-gray-200 bg-white">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
 
-        <Link
-          to="/"
-          className="text-2xl font-bold text-gray-900"
-        >
-          SOL
-        </Link>
+<Link to="/">
+  <img
+    src={logo}
+    alt="EcoFuture"
+    className="h-20 w-36 object-contain"
+  />
+</Link>
 
         <nav className="flex items-center gap-8">
           <Link
