@@ -286,7 +286,7 @@ Função: Desenvolvedor
 
 ---
 
-/* ========== REPOSITORIO ========== * / 
+ /* ========== REPOSITORIO ========== * / 
 
 Link do Repositorio git:
 https://github.com/U-Ale/Soulbuddy2.0
